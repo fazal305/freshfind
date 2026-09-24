@@ -10,12 +10,16 @@ export function renderMapEmbed({ lat, lng }, label = "Market location") {
 
   return `
     <div class="map-embed">
-      <iframe
-        title="${label}"
-        src="${src}"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <div class="map-embed__frame">
+        <div class="map-embed__skeleton">Loading map…</div>
+        <iframe
+          title="${label}"
+          src="${src}"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          onload="this.previousElementSibling.style.display='none'"
+        ></iframe>
+      </div>
       <a href="${externalLink}" target="_blank" rel="noopener noreferrer" class="small">Open in Google Maps</a>
     </div>
   `;
