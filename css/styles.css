@@ -237,19 +237,15 @@ a {
 }
 
 .market-card__thumb {
+  display: block;
   height: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-forest)
-  );
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 2.25rem;
-  font-weight: 700;
+  overflow: hidden;
+}
+
+.market-card__thumb svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .market-card .market-card__area {
@@ -370,6 +366,29 @@ a {
   letter-spacing: 0.04em;
   color: var(--color-produce-dark);
   font-weight: 700;
+}
+
+.produce-card__thumb {
+  height: 90px;
+  overflow: hidden;
+}
+
+.produce-card__thumb svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.market-detail__hero {
+  height: 200px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.market-detail__hero svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* Chatbot */

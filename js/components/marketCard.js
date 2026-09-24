@@ -3,6 +3,7 @@ import { getMarketStatus } from "../utils/marketStatus.js";
 import { renderStatusPill } from "./statusPill.js";
 import { haversineDistanceKm } from "../utils/distance.js";
 import { renderBookmarkButton } from "./bookmarkButton.js";
+import { renderMarketIllustration } from "./illustrations.js";
 
 export function renderMarketCard(market, distanceKm) {
   const status = getMarketStatus(market);
@@ -17,7 +18,7 @@ export function renderMarketCard(market, distanceKm) {
     <div class="col-sm-6 col-lg-4">
       <article class="market-card card h-100">
         <a href="#/markets/${market.slug}" class="market-card__thumb" tabindex="-1" aria-hidden="true">
-          <span>${market.name.charAt(0)}</span>
+          ${renderMarketIllustration()}
         </a>
         <div class="card-body position-relative">
           ${renderBookmarkButton("market", market.id, { className: "market-card__bookmark" })}

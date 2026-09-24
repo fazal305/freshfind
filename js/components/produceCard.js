@@ -1,5 +1,6 @@
 import { isInSeason } from "../utils/seasonal.js";
 import { renderBookmarkButton } from "./bookmarkButton.js";
+import { renderProduceIllustration } from "./illustrations.js";
 
 export function renderProduceCard(item) {
   const inSeason = isInSeason(item);
@@ -7,6 +8,7 @@ export function renderProduceCard(item) {
   return `
     <div class="col-sm-6 col-lg-4">
       <article class="produce-card card h-100">
+        <div class="produce-card__thumb">${renderProduceIllustration(item.id)}</div>
         <div class="card-body position-relative">
           ${renderBookmarkButton("produce", item.id, { className: "market-card__bookmark" })}
           <p class="produce-card__category mb-1">${item.category}</p>

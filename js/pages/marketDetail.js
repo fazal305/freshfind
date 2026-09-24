@@ -8,6 +8,7 @@ import { getMarketStatus } from "../utils/marketStatus.js";
 import { onEveryMinute } from "../utils/clock.js";
 import { setPageMeta } from "../utils/seo.js";
 import { renderBookmarkButton } from "../components/bookmarkButton.js";
+import { renderMarketIllustration } from "../components/illustrations.js";
 
 function renderProduceLinks(market, produce) {
   const items = produce.filter((p) => market.produceIds.includes(p.id));
@@ -64,6 +65,8 @@ export async function renderMarketDetail({ marketSlug }) {
   $("#main-content").html(`
     <div class="container py-4">
       ${renderBreadcrumbs([{ label: "Markets", path: "/markets" }, { label: market.name }])}
+
+      <div class="market-detail__hero mb-3">${renderMarketIllustration()}</div>
 
       <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-2">
         <div>
