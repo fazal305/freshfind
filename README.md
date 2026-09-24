@@ -76,12 +76,11 @@ There is no build step — the repository *is* the production artifact. Deploy t
 
 ## Deployment
 
-Any static host works (Vercel, Netlify, Cloudflare Pages, GitHub Pages, S3). Two things to check after deploying:
+Any static host works (Vercel, Netlify, Cloudflare Pages, GitHub Pages, S3). Because this is a client-side-routed SPA using the URL **hash** (`#/markets`, not `/markets`), no server-side rewrite rule is needed — `index.html` is the only page a host ever needs to serve, and the hash fragment is handled entirely in the browser.
 
-1. Update `robots.txt` and `sitemap.xml` to use the real deployed domain (they currently point at a placeholder `https://freshfind.example`).
-2. Because this is a client-side-routed SPA using the URL **hash** (`#/markets`, not `/markets`), no server-side rewrite rule is needed — `index.html` is the only page a host ever needs to serve, and the hash fragment is handled entirely in the browser.
+Deployed on Vercel, connected to this repository's `master` branch.
 
-**Live Demo:** not yet deployed. A link will be added here once a real deployment has been verified working.
+**Live Demo:** https://freshfind-fz17.vercel.app — verified publicly accessible (no auth wall) and fully functional.
 
 ## Limitations
 

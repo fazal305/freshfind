@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://freshfind.example/sitemap.xml
+Sitemap: https://freshfind-fz17.vercel.app/sitemap.xml
