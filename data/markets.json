@@ -23,10 +23,8 @@
     "description": "Neighbourhood market focused on dairy, eggs, and desi honey from small producers around the city.",
     "address": "Block 13-D, Gulshan-e-Iqbal",
     "area": "Gulshan-e-Iqbal",
-    "coordinates": { "lat": 24.9180, "lng": 67.0970 },
-    "hours": [
-      { "day": "Sunday", "open": "09:00", "close": "13:00" }
-    ],
+    "coordinates": { "lat": 24.918, "lng": 67.097 },
+    "hours": [{ "day": "Sunday", "open": "09:00", "close": "13:00" }],
     "produceIds": ["p3", "p4", "p5"],
     "image": "",
     "thumbnail": "",

@@ -9,7 +9,9 @@ export function navigate(path) {
 
 export function updateQuery(params) {
   const [path] = window.location.hash.slice(1).split("?");
-  const query = new URLSearchParams(Object.entries(params).filter(([, v]) => v));
+  const query = new URLSearchParams(
+    Object.entries(params).filter(([, v]) => v),
+  );
   const queryString = query.toString();
   window.location.hash = queryString ? `${path}?${queryString}` : path;
 }

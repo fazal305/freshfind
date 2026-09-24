@@ -29,7 +29,9 @@ const PRODUCE_ICONS = {
 };
 
 export function renderProduceIllustration(produceId) {
-  const inner = PRODUCE_ICONS[produceId] ?? `<circle cx="50" cy="50" r="30" fill="#9c5223"/>`;
+  const inner =
+    PRODUCE_ICONS[produceId] ??
+    `<circle cx="50" cy="50" r="30" fill="#9c5223"/>`;
   return `
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true">
       <rect width="100" height="100" fill="#f2ede1" />

@@ -38,7 +38,7 @@ const routes = [
         paramNames.push(match.slice(1));
         return "([^/]+)";
       }) +
-      "$"
+      "$",
   );
   return { regex, paramNames, handler };
 });
@@ -120,13 +120,16 @@ async function handleRouteChange() {
   showLoadingBar();
 
   const values = match.regex.exec(path).slice(1);
-  const params = Object.fromEntries(match.paramNames.map((name, i) => [name, values[i]]));
+  const params = Object.fromEntries(
+    match.paramNames.map((name, i) => [name, values[i]]),
+  );
 
   try {
     const result = await match.handler(params);
     currentRoute = match;
     currentOnQueryChange = typeof result === "function" ? result : null;
-    currentCleanup = result && typeof result === "object" ? (result.cleanup ?? null) : null;
+    currentCleanup =
+      result && typeof result === "object" ? (result.cleanup ?? null) : null;
   } catch (error) {
     console.error("FreshFind route error:", error);
     renderRouteError();

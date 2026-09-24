@@ -5,25 +5,61 @@
     "keywords": ["open", "now", "currently", "right now"],
     "patterns": ["what.*open now", "is.*open", "which markets are open"],
     "response": "Here are the markets currently open based on their listed hours:",
-    "suggestedFollowups": ["What markets are open Saturday?", "Show me markets near me"],
+    "suggestedFollowups": [
+      "What markets are open Saturday?",
+      "Show me markets near me"
+    ],
     "linkType": "market"
   },
   {
     "id": "hours-by-day",
     "category": "market-hours",
-    "keywords": ["saturday", "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "day", "hours"],
-    "patterns": ["open.*(saturday|sunday|monday|tuesday|wednesday|thursday|friday)", "what.*hours"],
+    "keywords": [
+      "saturday",
+      "sunday",
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "day",
+      "hours"
+    ],
+    "patterns": [
+      "open.*(saturday|sunday|monday|tuesday|wednesday|thursday|friday)",
+      "what.*hours"
+    ],
     "response": "Here's what I found for that day:",
-    "suggestedFollowups": ["What produce is available?", "Where is this market located?"],
+    "suggestedFollowups": [
+      "What produce is available?",
+      "Where is this market located?"
+    ],
     "linkType": "market"
   },
   {
     "id": "produce-lookup",
     "category": "produce",
-    "keywords": ["produce", "vegetables", "fruit", "tomatoes", "honey", "eggs", "dairy", "herbs", "bread"],
-    "patterns": ["what.*(vegetables|produce|fruit)", "do you have", "is there.*available"],
+    "keywords": [
+      "produce",
+      "vegetables",
+      "fruit",
+      "tomatoes",
+      "honey",
+      "eggs",
+      "dairy",
+      "herbs",
+      "bread"
+    ],
+    "patterns": [
+      "what.*(vegetables|produce|fruit)",
+      "do you have",
+      "is there.*available"
+    ],
     "response": "Here's what matches in the FreshFind produce guide:",
-    "suggestedFollowups": ["Which markets sell this?", "What's in season right now?"],
+    "suggestedFollowups": [
+      "Which markets sell this?",
+      "What's in season right now?"
+    ],
     "linkType": "produce"
   },
   {
