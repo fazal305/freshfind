@@ -1,0 +1,101 @@
+[
+  {
+    "id": "p1",
+    "slug": "desi-tamatar",
+    "name": "Desi Tamatar (Tomatoes)",
+    "category": "vegetables",
+    "description": "Locally grown desi tomatoes, favored for their tartness in curries and chutneys.",
+    "typicalSeason": "Winter",
+    "availableMonths": [11, 12, 1, 2, 3],
+    "image": "",
+    "marketIds": ["m1", "m3", "m4"]
+  },
+  {
+    "id": "p2",
+    "slug": "gulab-genda-phool",
+    "name": "Gulab & Genda Phool",
+    "category": "specialty",
+    "description": "Rose and marigold garlands and loose flowers, sourced from local flower growers for home and event use.",
+    "typicalSeason": "Year-round",
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "",
+    "marketIds": ["m1"]
+  },
+  {
+    "id": "p3",
+    "slug": "desi-anda",
+    "name": "Desi Anda (Farm Eggs)",
+    "category": "eggs",
+    "description": "Free-range desi eggs from small poultry farms within the region.",
+    "typicalSeason": "Year-round",
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "",
+    "marketIds": ["m2", "m5"]
+  },
+  {
+    "id": "p4",
+    "slug": "desi-honey",
+    "name": "Desi Shehad (Honey)",
+    "category": "honey",
+    "description": "Unfiltered honey harvested from apiaries in the northern regions of Pakistan.",
+    "typicalSeason": "Spring through Summer",
+    "availableMonths": [3, 4, 5, 6, 7],
+    "image": "",
+    "marketIds": ["m2"]
+  },
+  {
+    "id": "p5",
+    "slug": "doodh-dahi-makhan",
+    "name": "Doodh, Dahi & Makhan",
+    "category": "dairy",
+    "description": "Fresh milk, dahi (yogurt), and desi makhan (white butter) from a single regional dairy farm.",
+    "typicalSeason": "Year-round",
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "",
+    "marketIds": ["m2", "m5"]
+  },
+  {
+    "id": "p6",
+    "slug": "tandoori-roti-naan",
+    "name": "Tandoori Roti & Naan",
+    "category": "baked-goods",
+    "description": "Fresh tandoori roti and naan baked in a clay tandoor the morning of market day.",
+    "typicalSeason": "Year-round",
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "",
+    "marketIds": ["m1", "m3"]
+  },
+  {
+    "id": "p7",
+    "slug": "dhania-pudina",
+    "name": "Dhania & Pudina",
+    "category": "herbs",
+    "description": "Fresh coriander and mint, bunched and cut to order for chutneys and garnish.",
+    "typicalSeason": "Winter through Spring",
+    "availableMonths": [11, 12, 1, 2, 3, 4],
+    "image": "",
+    "marketIds": ["m3"]
+  },
+  {
+    "id": "p8",
+    "slug": "chaunsa-sindhri-mangoes",
+    "name": "Chaunsa & Sindhri Aam (Mangoes)",
+    "category": "fruits",
+    "description": "Chaunsa and Sindhri mangoes sourced directly from Multan and Sindh orchards.",
+    "typicalSeason": "Summer",
+    "availableMonths": [5, 6, 7, 8],
+    "image": "",
+    "marketIds": ["m4"]
+  },
+  {
+    "id": "p9",
+    "slug": "sarson-til-ka-tel",
+    "name": "Sarson & Til ka Tel",
+    "category": "specialty",
+    "description": "Cold-pressed mustard (sarson) and sesame (til) oil, pressed in small batches with no additives.",
+    "typicalSeason": "Year-round",
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "",
+    "marketIds": ["m4", "m5"]
+  }
+]

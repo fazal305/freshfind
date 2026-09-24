@@ -1,0 +1,13 @@
+{
+  "note": "Seasonal availability is derived from produce.json's availableMonths field. This file only holds editorial copy per category, not raw availability data.",
+  "categoryBlurbs": {
+    "vegetables": "Vegetables trend toward warm-season crops through summer and early fall.",
+    "fruits": "Fruit availability in the dataset is currently limited — check back as more markets are added.",
+    "herbs": "Herbs are typically available fresh from spring through the first frost.",
+    "dairy": "Dairy and eggs are listed year-round across participating markets.",
+    "eggs": "Dairy and eggs are listed year-round across participating markets.",
+    "honey": "Honey follows the summer and fall harvest window.",
+    "baked-goods": "Baked goods are available year-round, independent of growing season.",
+    "specialty": "Specialty and flower items rotate throughout the growing season."
+  }
+}

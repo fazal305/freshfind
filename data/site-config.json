@@ -1,0 +1,19 @@
+{
+  "siteName": "FreshFind",
+  "tagline": "Fresh All Along",
+  "theme": "eGreen Basket",
+  "visitorCounter": {
+    "seed": 4218,
+    "note": "Simulated counter for demonstration purposes only. Not a real analytics figure."
+  },
+  "nav": {
+    "primary": [
+      { "label": "Home", "path": "/" },
+      { "label": "Markets", "path": "/markets" },
+      { "label": "Produce", "path": "/produce" },
+      { "label": "Bookmarks", "path": "/bookmarks" },
+      { "label": "About", "path": "/about" }
+    ],
+    "secondary": [{ "label": "Contact", "path": "/contact" }]
+  }
+}

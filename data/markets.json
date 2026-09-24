@@ -1,0 +1,86 @@
+[
+  {
+    "id": "m1",
+    "slug": "clifton-kisan-bazaar",
+    "name": "Clifton Kisan Bazaar",
+    "description": "A seaside market known for desi tamatar, gulab and genda phool, and fresh tandoori roti from local bakers.",
+    "address": "Block 5, Clifton, near Do Darya",
+    "area": "Clifton",
+    "coordinates": { "lat": 24.8138, "lng": 67.0299 },
+    "hours": [
+      { "day": "Wednesday", "open": "08:00", "close": "13:00" },
+      { "day": "Saturday", "open": "07:00", "close": "14:00" }
+    ],
+    "produceIds": ["p1", "p2", "p6"],
+    "image": "",
+    "thumbnail": "",
+    "tags": ["organic", "flowers", "baked-goods"]
+  },
+  {
+    "id": "m2",
+    "slug": "gulshan-sunday-market",
+    "name": "Gulshan Sunday Market",
+    "description": "Neighbourhood market focused on dairy, eggs, and desi honey from small producers around the city.",
+    "address": "Block 13-D, Gulshan-e-Iqbal",
+    "area": "Gulshan-e-Iqbal",
+    "coordinates": { "lat": 24.9180, "lng": 67.0970 },
+    "hours": [
+      { "day": "Sunday", "open": "09:00", "close": "13:00" }
+    ],
+    "produceIds": ["p3", "p4", "p5"],
+    "image": "",
+    "thumbnail": "",
+    "tags": ["dairy", "eggs", "honey"]
+  },
+  {
+    "id": "m3",
+    "slug": "saddar-evening-bazaar",
+    "name": "Saddar Evening Bazaar",
+    "description": "An after-work bazaar with prepared foods, dhania and pudina, and seasonal vegetables from nearby growers.",
+    "address": "Zaibunnisa Street, Saddar",
+    "area": "Saddar",
+    "coordinates": { "lat": 24.8567, "lng": 67.0281 },
+    "hours": [
+      { "day": "Tuesday", "open": "16:00", "close": "20:00" },
+      { "day": "Thursday", "open": "16:00", "close": "20:00" }
+    ],
+    "produceIds": ["p1", "p6", "p7"],
+    "image": "",
+    "thumbnail": "",
+    "tags": ["herbs", "prepared-food"]
+  },
+  {
+    "id": "m4",
+    "slug": "dha-organic-hub",
+    "name": "DHA Organic Hub",
+    "description": "A weekend market specializing in organic vegetables, chaunsa and sindhri aam, and sarson ka tel from Sindh farms.",
+    "address": "26th Street, Phase 6, DHA",
+    "area": "DHA",
+    "coordinates": { "lat": 24.7969, "lng": 67.0654 },
+    "hours": [
+      { "day": "Friday", "open": "10:00", "close": "15:00" },
+      { "day": "Saturday", "open": "10:00", "close": "15:00" }
+    ],
+    "produceIds": ["p1", "p8", "p9"],
+    "image": "",
+    "thumbnail": "",
+    "tags": ["organic", "fruit", "oils"]
+  },
+  {
+    "id": "m5",
+    "slug": "north-nazimabad-kisan-mandi",
+    "name": "North Nazimabad Kisan Mandi",
+    "description": "A long-running mandi bringing produce directly from Sindh and Punjab farms to North Nazimabad residents.",
+    "address": "Block C, North Nazimabad",
+    "area": "North Nazimabad",
+    "coordinates": { "lat": 24.9342, "lng": 67.0509 },
+    "hours": [
+      { "day": "Monday", "open": "07:00", "close": "12:00" },
+      { "day": "Thursday", "open": "07:00", "close": "12:00" }
+    ],
+    "produceIds": ["p3", "p5", "p9"],
+    "image": "",
+    "thumbnail": "",
+    "tags": ["dairy", "fruit", "mandi"]
+  }
+]

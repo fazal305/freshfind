@@ -1,0 +1,65 @@
+[
+  {
+    "id": "open-now",
+    "category": "open-now",
+    "keywords": ["open", "now", "currently", "right now"],
+    "patterns": ["what.*open now", "is.*open", "which markets are open"],
+    "response": "Here are the markets currently open based on their listed hours:",
+    "suggestedFollowups": ["What markets are open Saturday?", "Show me markets near me"],
+    "linkType": "market"
+  },
+  {
+    "id": "hours-by-day",
+    "category": "market-hours",
+    "keywords": ["saturday", "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "day", "hours"],
+    "patterns": ["open.*(saturday|sunday|monday|tuesday|wednesday|thursday|friday)", "what.*hours"],
+    "response": "Here's what I found for that day:",
+    "suggestedFollowups": ["What produce is available?", "Where is this market located?"],
+    "linkType": "market"
+  },
+  {
+    "id": "produce-lookup",
+    "category": "produce",
+    "keywords": ["produce", "vegetables", "fruit", "tomatoes", "honey", "eggs", "dairy", "herbs", "bread"],
+    "patterns": ["what.*(vegetables|produce|fruit)", "do you have", "is there.*available"],
+    "response": "Here's what matches in the FreshFind produce guide:",
+    "suggestedFollowups": ["Which markets sell this?", "What's in season right now?"],
+    "linkType": "produce"
+  },
+  {
+    "id": "seasonal",
+    "category": "seasonal",
+    "keywords": ["season", "seasonal", "this month", "right now"],
+    "patterns": ["what.*in season", "seasonal"],
+    "response": "Based on the FreshFind dataset, here's what's typically in season this month:",
+    "suggestedFollowups": ["Show me the full produce guide"],
+    "linkType": "produce"
+  },
+  {
+    "id": "location",
+    "category": "location",
+    "keywords": ["near", "nearby", "location", "close to me", "area"],
+    "patterns": ["near me", "closest market", "what's nearby"],
+    "response": "I can use your browser location to sort markets by distance if you allow location access.",
+    "suggestedFollowups": ["Find markets near me"],
+    "linkType": "market"
+  },
+  {
+    "id": "bookmarks-help",
+    "category": "bookmarks",
+    "keywords": ["bookmark", "save", "favorite", "notes"],
+    "patterns": ["how do i bookmark", "save a market"],
+    "response": "Tap the bookmark icon on any market or produce card to save it. You can add a note to it from your Bookmarks page.",
+    "suggestedFollowups": ["Show me my bookmarks"],
+    "linkType": "none"
+  },
+  {
+    "id": "general-help",
+    "category": "help",
+    "keywords": ["help", "what can you do", "hello", "hi"],
+    "patterns": ["help", "what can you do"],
+    "response": "I can help you find markets, check hours, look up produce, and manage bookmarks. Try asking \"What's open Saturday?\" or \"What vegetables are in season?\"",
+    "suggestedFollowups": ["What markets are open now?", "What's in season?"],
+    "linkType": "none"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "organization": "FreshFind",
+  "tagline": "Fresh All Along",
+  "mission": "FreshFind helps residents discover nearby farmers markets, understand when they're open, and see what's typically available, using a single static dataset rather than live inventory feeds.",
+  "contact": {
+    "email": "hello@freshfind.pk",
+    "address": "Block 5, Clifton, Karachi, Pakistan",
+    "coordinates": { "lat": 24.8138, "lng": 67.0299 }
+  },
+  "limitations": [
+    "Market hours and produce lists reflect the FreshFind sample dataset, not live vendor data.",
+    "This is a frontend-only educational/portfolio project with no backend or real-time updates."
+  ]
+}
