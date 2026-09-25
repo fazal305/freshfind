@@ -70,7 +70,7 @@ export async function renderHome() {
             style="object-fit: cover;"
           />
         </picture>
-        <div class="home-hero-banner__content position-relative p-4 p-md-5 d-flex flex-column justify-content-between h-100" style="background: linear-gradient(135deg, rgba(22, 53, 31, 0.92) 0%, rgba(31, 74, 48, 0.78) 50%, rgba(0, 0, 0, 0.65) 100%);">
+        <div class="home-hero-banner__content position-relative p-4 p-md-5 d-flex flex-column justify-content-between h-100">
           <div>
             <span class="badge bg-warning text-dark fw-bold mb-2">eGreen Basket · Fresh All Along</span>
             <h1 class="display-5 fw-bold text-white mb-3">Discover Authentic Farmers Markets</h1>
@@ -131,7 +131,7 @@ export async function renderHome() {
       })}
       <div id="home-seasonal" class="mb-5"></div>
 
-      <div class="banner-cta card border-0 rounded-4 p-4 p-md-5 mb-4 text-white shadow-sm" style="background: linear-gradient(135deg, #1f4a30 0%, #2f6b45 100%);">
+      <div class="banner-cta card border-0 rounded-4 p-4 p-md-5 mb-4 text-white shadow-sm">
         <div class="row align-items-center g-4">
           <div class="col-md-8">
             <span class="badge bg-warning text-dark mb-2">New Feature</span>

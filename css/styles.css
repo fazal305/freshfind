@@ -790,3 +790,32 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary-dark);
 }
+
+/* Drifting gradients */
+.home-hero-banner__content {
+  background: linear-gradient(135deg, rgba(22, 53, 31, 0.92) 0%, rgba(31, 74, 48, 0.78) 45%, rgba(0, 0, 0, 0.65) 100%);
+  background-size: 180% 180%;
+  animation: gradient-drift 16s ease-in-out infinite;
+}
+
+.banner-cta {
+  background: linear-gradient(135deg, #1f4a30 0%, #2f6b45 50%, #3f7d52 100%);
+  background-size: 200% 200%;
+  animation: gradient-drift 13s ease-in-out infinite;
+}
+
+@keyframes gradient-drift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-banner__content,
+  .banner-cta {
+    animation: none;
+  }
+}
