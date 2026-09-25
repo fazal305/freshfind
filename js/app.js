@@ -3,15 +3,6 @@ import { renderFooter } from "./components/footer.js";
 import { renderChatbot } from "./components/chatbot.js";
 import { bindBookmarkButtons } from "./components/bookmarkButton.js";
 import { parseQuery } from "./utils/queryParams.js";
-import { renderHome } from "./pages/home.js";
-import { renderMarketDirectory } from "./pages/marketDirectory.js";
-import { renderMarketDetail } from "./pages/marketDetail.js";
-import { renderProduceGuide } from "./pages/produceGuide.js";
-import { renderProduceDetail } from "./pages/produceDetail.js";
-import { renderBookmarks } from "./pages/bookmarks.js";
-import { renderContact } from "./pages/contact.js";
-import { renderAbout } from "./pages/about.js";
-import { renderNotFound } from "./pages/notFound.js";
 
 function withNav(renderFn) {
   return async (params) => {
@@ -21,16 +12,18 @@ function withNav(renderFn) {
   };
 }
 
-const routes = [
-  { pattern: "/", handler: withNav(renderHome) },
-  { pattern: "/markets", handler: withNav(renderMarketDirectory) },
-  { pattern: "/markets/:marketSlug", handler: withNav(renderMarketDetail) },
-  { pattern: "/produce", handler: withNav(renderProduceGuide) },
-  { pattern: "/produce/:produceSlug", handler: withNav(renderProduceDetail) },
-  { pattern: "/bookmarks", handler: withNav(renderBookmarks) },
-  { pattern: "/contact", handler: withNav(renderContact) },
-  { pattern: "/about", handler: withNav(renderAbout) },
-].map(({ pattern, handler }) => {
+const routeDefs = [
+  { pattern: "/", load: () => import("./pages/home.js").then((m) => m.renderHome) },
+  { pattern: "/markets", load: () => import("./pages/marketDirectory.js").then((m) => m.renderMarketDirectory) },
+  { pattern: "/markets/:marketSlug", load: () => import("./pages/marketDetail.js").then((m) => m.renderMarketDetail) },
+  { pattern: "/produce", load: () => import("./pages/produceGuide.js").then((m) => m.renderProduceGuide) },
+  { pattern: "/produce/:produceSlug", load: () => import("./pages/produceDetail.js").then((m) => m.renderProduceDetail) },
+  { pattern: "/bookmarks", load: () => import("./pages/bookmarks.js").then((m) => m.renderBookmarks) },
+  { pattern: "/contact", load: () => import("./pages/contact.js").then((m) => m.renderContact) },
+  { pattern: "/about", load: () => import("./pages/about.js").then((m) => m.renderAbout) },
+];
+
+const routes = routeDefs.map(({ pattern, load }) => {
   const paramNames = [];
   const regex = new RegExp(
     "^" +
@@ -38,12 +31,12 @@ const routes = [
         paramNames.push(match.slice(1));
         return "([^/]+)";
       }) +
-      "$",
+      "$"
   );
-  return { regex, paramNames, handler };
+  return { regex, paramNames, load };
 });
 
-const notFoundHandler = withNav(renderNotFound);
+const loadNotFound = () => import("./pages/notFound.js").then((m) => m.renderNotFound);
 
 let currentRoute = null;
 let currentOnQueryChange = null;
@@ -105,7 +98,15 @@ async function handleRouteChange() {
 
   if (!match) {
     teardownCurrentRoute();
-    await notFoundHandler({});
+    showLoadingBar();
+    try {
+      const renderFn = await loadNotFound();
+      await withNav(renderFn)({});
+    } catch (error) {
+      console.error("FreshFind route error:", error);
+      renderRouteError();
+    }
+    hideLoadingBar();
     replayPageAnimation();
     return;
   }
@@ -120,16 +121,14 @@ async function handleRouteChange() {
   showLoadingBar();
 
   const values = match.regex.exec(path).slice(1);
-  const params = Object.fromEntries(
-    match.paramNames.map((name, i) => [name, values[i]]),
-  );
+  const params = Object.fromEntries(match.paramNames.map((name, i) => [name, values[i]]));
 
   try {
-    const result = await match.handler(params);
+    const renderFn = await match.load();
+    const result = await withNav(renderFn)(params);
     currentRoute = match;
     currentOnQueryChange = typeof result === "function" ? result : null;
-    currentCleanup =
-      result && typeof result === "object" ? (result.cleanup ?? null) : null;
+    currentCleanup = result && typeof result === "object" ? (result.cleanup ?? null) : null;
   } catch (error) {
     console.error("FreshFind route error:", error);
     renderRouteError();

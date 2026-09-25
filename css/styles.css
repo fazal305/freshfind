@@ -34,6 +34,7 @@ body {
 #main-content {
   flex: 1;
   min-width: 0;
+  min-height: 82vh;
   animation: page-fade-in var(--duration-base) var(--ease-standard);
 }
 
@@ -114,12 +115,18 @@ a {
 }
 
 /* Header */
+#site-header {
+  display: block;
+  min-height: var(--header-height);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
 .site-header {
   position: sticky;
   top: 0;
   z-index: 40;
   background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .site-header .brand {
@@ -152,11 +159,23 @@ a {
 }
 
 /* Footer */
+#site-footer {
+  display: block;
+  min-height: 340px;
+  background: var(--color-forest);
+  margin-top: var(--space-8);
+}
+
+@media (min-width: 576px) {
+  #site-footer {
+    min-height: 180px;
+  }
+}
+
 .site-footer {
   background: var(--color-forest);
   color: #e8ede8;
   padding-block: var(--space-6);
-  margin-top: var(--space-8);
 }
 
 .site-footer a {
