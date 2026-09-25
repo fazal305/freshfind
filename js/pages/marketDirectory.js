@@ -13,6 +13,7 @@ import { isMarketOpen } from "../utils/marketStatus.js";
 import { setPageMeta } from "../utils/seo.js";
 import { parseQuery, updateQuery } from "../utils/queryParams.js";
 import { requestLocation } from "../utils/geolocation.js";
+import { observeReveals } from "../utils/scrollReveal.js";
 
 let markets = [];
 let produce = [];
@@ -74,6 +75,7 @@ function applyAndRender(state) {
           actionsHtml: `<button type="button" class="btn btn-success" id="clear-all-filters">Clear filters</button>`,
         }),
   );
+  observeReveals(document.getElementById("market-results"));
 }
 
 function getState() {

@@ -6,9 +6,29 @@
     "category": "vegetables",
     "description": "Locally grown desi tomatoes, favored for their tartness in curries and chutneys.",
     "typicalSeason": "Winter",
-    "availableMonths": [11, 12, 1, 2, 3],
-    "image": "",
-    "marketIds": ["m1", "m3", "m4"]
+    "availableMonths": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "image": "/assets/images/produce/desi-tamatar.webp",
+    "marketIds": [
+      "m1",
+      "m3",
+      "m4"
+    ],
+    "storageTip": "Store at room temperature stem-side down away from direct sunlight; do not refrigerate until fully ripe.",
+    "culinaryUses": [
+      "Karahi gravy base",
+      "Kachumber salad",
+      "Tamatar chutney",
+      "Salona"
+    ],
+    "nutritionalHighlight": "High in Lycopene and Vitamin C",
+    "approxPrice": "Rs. 140 / kg",
+    "unit": "kg"
   },
   {
     "id": "p2",
@@ -17,9 +37,34 @@
     "category": "specialty",
     "description": "Rose and marigold garlands and loose flowers, sourced from local flower growers for home and event use.",
     "typicalSeason": "Year-round",
-    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "",
-    "marketIds": ["m1"]
+    "availableMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "image": "/assets/images/produce/gulab-genda-phool.webp",
+    "marketIds": [
+      "m1"
+    ],
+    "storageTip": "Keep stems trimmed in cold water with a drop of rosewater; mist lightly with water to preserve scent.",
+    "culinaryUses": [
+      "Rose water extraction",
+      "Gulkand confection",
+      "Event decor",
+      "Pooja garlands"
+    ],
+    "nutritionalHighlight": "Aromatherapeutic natural floral oils",
+    "approxPrice": "Rs. 250 / garland",
+    "unit": "garland"
   },
   {
     "id": "p3",
@@ -28,9 +73,35 @@
     "category": "eggs",
     "description": "Free-range desi eggs from small poultry farms within the region.",
     "typicalSeason": "Year-round",
-    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "",
-    "marketIds": ["m2", "m5"]
+    "availableMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "image": "/assets/images/produce/desi-anda.webp",
+    "marketIds": [
+      "m2",
+      "m5"
+    ],
+    "storageTip": "Keep refrigerated in their carton pointy-end down to preserve freshness for up to 3 weeks.",
+    "culinaryUses": [
+      "Desi breakfast fry",
+      "Egg salan",
+      "Anda shami burger",
+      "Baking"
+    ],
+    "nutritionalHighlight": "High protein, rich yolk Omega-3s",
+    "approxPrice": "Rs. 380 / dozen",
+    "unit": "dozen"
   },
   {
     "id": "p4",
@@ -39,9 +110,27 @@
     "category": "honey",
     "description": "Unfiltered honey harvested from apiaries in the northern regions of Pakistan.",
     "typicalSeason": "Spring through Summer",
-    "availableMonths": [3, 4, 5, 6, 7],
-    "image": "",
-    "marketIds": ["m2"]
+    "availableMonths": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "image": "/assets/images/produce/desi-honey.webp",
+    "marketIds": [
+      "m2"
+    ],
+    "storageTip": "Store in an airtight glass jar in a dry, dark cupboard. Do not refrigerate (natural crystallization is normal).",
+    "culinaryUses": [
+      "Morning warm water tonic",
+      "Chai sweetener",
+      "Paratha drizzle",
+      "Traditional remedies"
+    ],
+    "nutritionalHighlight": "Raw enzymes, antioxidants, and natural pollen",
+    "approxPrice": "Rs. 1,400 / 500g",
+    "unit": "jar"
   },
   {
     "id": "p5",
@@ -50,9 +139,35 @@
     "category": "dairy",
     "description": "Fresh milk, dahi (yogurt), and desi makhan (white butter) from a single regional dairy farm.",
     "typicalSeason": "Year-round",
-    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "",
-    "marketIds": ["m2", "m5"]
+    "availableMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "image": "/assets/images/produce/doodh-dahi-makhan.webp",
+    "marketIds": [
+      "m2",
+      "m5"
+    ],
+    "storageTip": "Keep clay matka dahi in the coldest part of the fridge; wrap white butter in wax paper.",
+    "culinaryUses": [
+      "Morning sweet/salty lassi",
+      "Raita",
+      "Makhan with hot paratha",
+      "Desi ghee making"
+    ],
+    "nutritionalHighlight": "Probiotics, high calcium, and healthy fats",
+    "approxPrice": "Rs. 320 / kg",
+    "unit": "kg"
   },
   {
     "id": "p6",
@@ -61,9 +176,35 @@
     "category": "baked-goods",
     "description": "Fresh tandoori roti and naan baked in a clay tandoor the morning of market day.",
     "typicalSeason": "Year-round",
-    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "",
-    "marketIds": ["m1", "m3"]
+    "availableMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "image": "/assets/images/produce/tandoori-roti-naan.webp",
+    "marketIds": [
+      "m1",
+      "m3"
+    ],
+    "storageTip": "Wrap tightly in a clean cotton kitchen cloth immediately after baking to keep soft and warm.",
+    "culinaryUses": [
+      "Accompaniment for daal and curries",
+      "BBQ wraps",
+      "Nihari pairing",
+      "Haleem spooning"
+    ],
+    "nutritionalHighlight": "Whole-grain stone-ground wheat carbs",
+    "approxPrice": "Rs. 25 / roti",
+    "unit": "piece"
   },
   {
     "id": "p7",
@@ -72,9 +213,28 @@
     "category": "herbs",
     "description": "Fresh coriander and mint, bunched and cut to order for chutneys and garnish.",
     "typicalSeason": "Winter through Spring",
-    "availableMonths": [11, 12, 1, 2, 3, 4],
-    "image": "",
-    "marketIds": ["m3"]
+    "availableMonths": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "image": "/assets/images/produce/dhania-pudina.webp",
+    "marketIds": [
+      "m3"
+    ],
+    "storageTip": "Trim stem ends, place upright in a jar with an inch of water, and loosely drape a bag over the top in the fridge.",
+    "culinaryUses": [
+      "Green hari chutney",
+      "Biryani garnishing",
+      "Pudina raita",
+      "Refreshing cooler drink"
+    ],
+    "nutritionalHighlight": "Rich in Vitamin A, Iron, and digestive menthol",
+    "approxPrice": "Rs. 40 / bunch",
+    "unit": "bunch"
   },
   {
     "id": "p8",
@@ -83,9 +243,26 @@
     "category": "fruits",
     "description": "Chaunsa and Sindhri mangoes sourced directly from Multan and Sindh orchards.",
     "typicalSeason": "Summer",
-    "availableMonths": [5, 6, 7, 8],
-    "image": "",
-    "marketIds": ["m4"]
+    "availableMonths": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "image": "/assets/images/produce/chaunsa-sindhri-mangoes.webp",
+    "marketIds": [
+      "m4"
+    ],
+    "storageTip": "Keep at room temperature until fragrant and slightly soft to the touch, then chill 1 hour before serving.",
+    "culinaryUses": [
+      "Chilled slices",
+      "Mango shake & lassi",
+      "Aam ras",
+      "Mango kulfi"
+    ],
+    "nutritionalHighlight": "High Vitamin A, Vitamin C, and dietary fiber",
+    "approxPrice": "Rs. 320 / kg",
+    "unit": "kg"
   },
   {
     "id": "p9",
@@ -94,8 +271,34 @@
     "category": "specialty",
     "description": "Cold-pressed mustard (sarson) and sesame (til) oil, pressed in small batches with no additives.",
     "typicalSeason": "Year-round",
-    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "",
-    "marketIds": ["m4", "m5"]
+    "availableMonths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "image": "/assets/images/produce/sarson-til-ka-tel.webp",
+    "marketIds": [
+      "m4",
+      "m5"
+    ],
+    "storageTip": "Store in dark amber glass bottles away from stove heat and sunlight to prevent oxidation.",
+    "culinaryUses": [
+      "Sarson ka saag cooking",
+      "Pickle (achaar) preservation",
+      "Tempering (tadka)",
+      "Traditional massage"
+    ],
+    "nutritionalHighlight": "Rich in monosaturated fats and Omega-6",
+    "approxPrice": "Rs. 750 / liter",
+    "unit": "liter"
   }
 ]

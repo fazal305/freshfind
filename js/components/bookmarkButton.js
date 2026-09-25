@@ -20,11 +20,16 @@ export function bindBookmarkButtons(container = document) {
     const type = $(this).data("bookmark-type");
     const id = String($(this).data("bookmark-id"));
     const active = toggleBookmark(type, id);
-    $(this)
+    const btn = $(this);
+    btn
       .toggleClass("is-active", active)
       .attr("aria-pressed", active)
       .attr("aria-label", active ? "Remove bookmark" : "Add bookmark")
       .attr("title", active ? "Remove bookmark" : "Add bookmark")
       .text(active ? "★" : "☆");
+
+    btn.removeClass("is-pop");
+    void btn[0].offsetWidth;
+    btn.addClass("is-pop");
   });
 }

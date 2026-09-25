@@ -1,6 +1,6 @@
 # FreshFind — Fresh All Along
 
-*eGreen Basket · Web Innovation Unleashed*
+_eGreen Basket · Web Innovation Unleashed_
 
 FreshFind helps residents discover nearby farmers markets: search and filter a live directory, check weekly schedules and real-time open/closed status, browse a seasonal produce guide, get answers from a rule-based chatbot, bookmark favorites with session notes, and find markets near them with browser geolocation — all from a single static dataset, with no backend of any kind.
 
@@ -72,7 +72,7 @@ Edit any file under `css/`, `js/`, or `data/` and refresh the browser — there 
 
 ## Production Build
 
-There is no build step — the repository *is* the production artifact. Deploy the project root as-is to any static host.
+There is no build step — the repository _is_ the production artifact. Deploy the project root as-is to any static host.
 
 ## Deployment
 
@@ -97,12 +97,12 @@ Manually verified through real browser interaction (not just visual screenshots)
 
 Run with the Lighthouse CLI against a local static server (not Chrome DevTools' UI, but the same underlying audit):
 
-| Category | Score |
-|---|---|
-| Accessibility | 100 |
-| Best Practices | 100 |
-| SEO | 100 |
-| Performance | not reliably measurable in the sandboxed environment this was built in — see note below |
+| Category       | Score                                                                                   |
+| -------------- | --------------------------------------------------------------------------------------- |
+| Accessibility  | 100                                                                                     |
+| Best Practices | 100                                                                                     |
+| SEO            | 100                                                                                     |
+| Performance    | not reliably measurable in the sandboxed environment this was built in — see note below |
 
 Two real accessibility issues were found and fixed: `.btn-outline-secondary` links and `.produce-card__category` labels both fell just under the 4.5:1 contrast minimum against the cream background; both were darkened to WCAG-safe values (verified against the actual rendered elements, not just the design tokens — Bootstrap's compiled CSS hardcodes component-level color variables that a root-level token override does not reach). SEO's `robots.txt` had a relative `Sitemap:` URL, which is invalid per spec; fixed to an absolute URL.
 

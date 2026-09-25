@@ -1,6 +1,8 @@
 import { renderHeader, highlightActiveNav } from "./components/header.js";
 import { renderFooter } from "./components/footer.js";
 import { renderChatbot } from "./components/chatbot.js";
+import { renderBasketDrawer } from "./components/basketDrawer.js";
+import { renderLightboxModal } from "./components/photoLightbox.js";
 import { bindBookmarkButtons } from "./components/bookmarkButton.js";
 import { parseQuery } from "./utils/queryParams.js";
 
@@ -13,14 +15,42 @@ function withNav(renderFn) {
 }
 
 const routeDefs = [
-  { pattern: "/", load: () => import("./pages/home.js").then((m) => m.renderHome) },
-  { pattern: "/markets", load: () => import("./pages/marketDirectory.js").then((m) => m.renderMarketDirectory) },
-  { pattern: "/markets/:marketSlug", load: () => import("./pages/marketDetail.js").then((m) => m.renderMarketDetail) },
-  { pattern: "/produce", load: () => import("./pages/produceGuide.js").then((m) => m.renderProduceGuide) },
-  { pattern: "/produce/:produceSlug", load: () => import("./pages/produceDetail.js").then((m) => m.renderProduceDetail) },
-  { pattern: "/bookmarks", load: () => import("./pages/bookmarks.js").then((m) => m.renderBookmarks) },
-  { pattern: "/contact", load: () => import("./pages/contact.js").then((m) => m.renderContact) },
-  { pattern: "/about", load: () => import("./pages/about.js").then((m) => m.renderAbout) },
+  {
+    pattern: "/",
+    load: () => import("./pages/home.js").then((m) => m.renderHome),
+  },
+  {
+    pattern: "/markets",
+    load: () =>
+      import("./pages/marketDirectory.js").then((m) => m.renderMarketDirectory),
+  },
+  {
+    pattern: "/markets/:marketSlug",
+    load: () =>
+      import("./pages/marketDetail.js").then((m) => m.renderMarketDetail),
+  },
+  {
+    pattern: "/produce",
+    load: () =>
+      import("./pages/produceGuide.js").then((m) => m.renderProduceGuide),
+  },
+  {
+    pattern: "/produce/:produceSlug",
+    load: () =>
+      import("./pages/produceDetail.js").then((m) => m.renderProduceDetail),
+  },
+  {
+    pattern: "/bookmarks",
+    load: () => import("./pages/bookmarks.js").then((m) => m.renderBookmarks),
+  },
+  {
+    pattern: "/contact",
+    load: () => import("./pages/contact.js").then((m) => m.renderContact),
+  },
+  {
+    pattern: "/about",
+    load: () => import("./pages/about.js").then((m) => m.renderAbout),
+  },
 ];
 
 const routes = routeDefs.map(({ pattern, load }) => {
@@ -31,12 +61,13 @@ const routes = routeDefs.map(({ pattern, load }) => {
         paramNames.push(match.slice(1));
         return "([^/]+)";
       }) +
-      "$"
+      "$",
   );
   return { regex, paramNames, load };
 });
 
-const loadNotFound = () => import("./pages/notFound.js").then((m) => m.renderNotFound);
+const loadNotFound = () =>
+  import("./pages/notFound.js").then((m) => m.renderNotFound);
 
 let currentRoute = null;
 let currentOnQueryChange = null;
@@ -121,14 +152,17 @@ async function handleRouteChange() {
   showLoadingBar();
 
   const values = match.regex.exec(path).slice(1);
-  const params = Object.fromEntries(match.paramNames.map((name, i) => [name, values[i]]));
+  const params = Object.fromEntries(
+    match.paramNames.map((name, i) => [name, values[i]]),
+  );
 
   try {
     const renderFn = await match.load();
     const result = await withNav(renderFn)(params);
     currentRoute = match;
     currentOnQueryChange = typeof result === "function" ? result : null;
-    currentCleanup = result && typeof result === "object" ? (result.cleanup ?? null) : null;
+    currentCleanup =
+      result && typeof result === "object" ? (result.cleanup ?? null) : null;
   } catch (error) {
     console.error("FreshFind route error:", error);
     renderRouteError();
@@ -147,11 +181,29 @@ function bindSkipLink() {
   });
 }
 
+function bindScrollProgress() {
+  const bar = document.getElementById("scroll-progress-bar");
+  if (!bar) return;
+
+  const update = () => {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    bar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+  };
+
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+}
+
 async function bootstrap() {
   await Promise.all([renderHeader(), renderFooter()]);
   renderChatbot();
+  renderBasketDrawer();
+  renderLightboxModal();
   bindBookmarkButtons("#main-content");
   bindSkipLink();
+  bindScrollProgress();
 
   window.addEventListener("hashchange", handleRouteChange);
   handleRouteChange();

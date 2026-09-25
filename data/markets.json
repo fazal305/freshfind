@@ -6,15 +6,43 @@
     "description": "A seaside market known for desi tamatar, gulab and genda phool, and fresh tandoori roti from local bakers.",
     "address": "Block 5, Clifton, near Do Darya",
     "area": "Clifton",
-    "coordinates": { "lat": 24.8138, "lng": 67.0299 },
+    "coordinates": {
+      "lat": 24.8138,
+      "lng": 67.0299
+    },
     "hours": [
-      { "day": "Wednesday", "open": "08:00", "close": "13:00" },
-      { "day": "Saturday", "open": "07:00", "close": "14:00" }
+      {
+        "day": "Wednesday",
+        "open": "08:00",
+        "close": "13:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "07:00",
+        "close": "14:00"
+      }
     ],
-    "produceIds": ["p1", "p2", "p6"],
-    "image": "",
-    "thumbnail": "",
-    "tags": ["organic", "flowers", "baked-goods"]
+    "produceIds": [
+      "p1",
+      "p2",
+      "p6"
+    ],
+    "image": "/assets/images/markets/clifton-kisan-bazaar.webp",
+    "thumbnail": "/assets/images/markets/clifton-kisan-bazaar.webp",
+    "tags": [
+      "organic",
+      "flowers",
+      "baked-goods"
+    ],
+    "bestTime": "7:30 AM – 10:00 AM (Freshest seafood & morning dew produce)",
+    "vendorCount": 34,
+    "features": [
+      "Seaside Atmosphere",
+      "Live Tandoor Stalls",
+      "Fresh Rose Garlands",
+      "Wheelchair Accessible"
+    ],
+    "weatherHint": "Pleasant coastal breeze, 27°C"
   },
   {
     "id": "m2",
@@ -23,12 +51,38 @@
     "description": "Neighbourhood market focused on dairy, eggs, and desi honey from small producers around the city.",
     "address": "Block 13-D, Gulshan-e-Iqbal",
     "area": "Gulshan-e-Iqbal",
-    "coordinates": { "lat": 24.918, "lng": 67.097 },
-    "hours": [{ "day": "Sunday", "open": "09:00", "close": "13:00" }],
-    "produceIds": ["p3", "p4", "p5"],
-    "image": "",
-    "thumbnail": "",
-    "tags": ["dairy", "eggs", "honey"]
+    "coordinates": {
+      "lat": 24.918,
+      "lng": 67.097
+    },
+    "hours": [
+      {
+        "day": "Sunday",
+        "open": "09:00",
+        "close": "13:00"
+      }
+    ],
+    "produceIds": [
+      "p3",
+      "p4",
+      "p5"
+    ],
+    "image": "/assets/images/markets/gulshan-sunday-market.webp",
+    "thumbnail": "/assets/images/markets/gulshan-sunday-market.webp",
+    "tags": [
+      "dairy",
+      "eggs",
+      "honey"
+    ],
+    "bestTime": "8:30 AM – 11:00 AM (Peak dairy & honey arrivals)",
+    "vendorCount": 26,
+    "features": [
+      "Fresh Farm Dairy",
+      "Desi Shehad Tastings",
+      "Organic Poultry",
+      "Covered Walkways"
+    ],
+    "weatherHint": "Clear morning, 29°C"
   },
   {
     "id": "m3",
@@ -37,15 +91,42 @@
     "description": "An after-work bazaar with prepared foods, dhania and pudina, and seasonal vegetables from nearby growers.",
     "address": "Zaibunnisa Street, Saddar",
     "area": "Saddar",
-    "coordinates": { "lat": 24.8567, "lng": 67.0281 },
+    "coordinates": {
+      "lat": 24.8567,
+      "lng": 67.0281
+    },
     "hours": [
-      { "day": "Tuesday", "open": "16:00", "close": "20:00" },
-      { "day": "Thursday", "open": "16:00", "close": "20:00" }
+      {
+        "day": "Tuesday",
+        "open": "16:00",
+        "close": "20:00"
+      },
+      {
+        "day": "Thursday",
+        "open": "16:00",
+        "close": "20:00"
+      }
     ],
-    "produceIds": ["p1", "p6", "p7"],
-    "image": "",
-    "thumbnail": "",
-    "tags": ["herbs", "prepared-food"]
+    "produceIds": [
+      "p1",
+      "p6",
+      "p7"
+    ],
+    "image": "/assets/images/markets/saddar-evening-bazaar.webp",
+    "thumbnail": "/assets/images/markets/saddar-evening-bazaar.webp",
+    "tags": [
+      "herbs",
+      "prepared-food"
+    ],
+    "bestTime": "5:00 PM – 7:30 PM (Fresh twilight harvest & warm street buzz)",
+    "vendorCount": 42,
+    "features": [
+      "Twilight Bazaar",
+      "Fresh Herb Stalls",
+      "Clay Oven Roti",
+      "Historic Architecture"
+    ],
+    "weatherHint": "Breezy evening, 26°C"
   },
   {
     "id": "m4",
@@ -54,15 +135,43 @@
     "description": "A weekend market specializing in organic vegetables, chaunsa and sindhri aam, and sarson ka tel from Sindh farms.",
     "address": "26th Street, Phase 6, DHA",
     "area": "DHA",
-    "coordinates": { "lat": 24.7969, "lng": 67.0654 },
+    "coordinates": {
+      "lat": 24.7969,
+      "lng": 67.0654
+    },
     "hours": [
-      { "day": "Friday", "open": "10:00", "close": "15:00" },
-      { "day": "Saturday", "open": "10:00", "close": "15:00" }
+      {
+        "day": "Friday",
+        "open": "10:00",
+        "close": "15:00"
+      },
+      {
+        "day": "Saturday",
+        "open": "10:00",
+        "close": "15:00"
+      }
     ],
-    "produceIds": ["p1", "p8", "p9"],
-    "image": "",
-    "thumbnail": "",
-    "tags": ["organic", "fruit", "oils"]
+    "produceIds": [
+      "p1",
+      "p8",
+      "p9"
+    ],
+    "image": "/assets/images/markets/dha-organic-hub.webp",
+    "thumbnail": "/assets/images/markets/dha-organic-hub.webp",
+    "tags": [
+      "organic",
+      "fruit",
+      "oils"
+    ],
+    "bestTime": "10:00 AM – 1:00 PM (Full artisanal harvest selection)",
+    "vendorCount": 22,
+    "features": [
+      "Certified Organic",
+      "Cold-Pressed Oils",
+      "Sindhri Mango Stalls",
+      "Card / Cashless Accepted"
+    ],
+    "weatherHint": "Sunny & shaded, 28°C"
   },
   {
     "id": "m5",
@@ -71,14 +180,42 @@
     "description": "A long-running mandi bringing produce directly from Sindh and Punjab farms to North Nazimabad residents.",
     "address": "Block C, North Nazimabad",
     "area": "North Nazimabad",
-    "coordinates": { "lat": 24.9342, "lng": 67.0509 },
+    "coordinates": {
+      "lat": 24.9342,
+      "lng": 67.0509
+    },
     "hours": [
-      { "day": "Monday", "open": "07:00", "close": "12:00" },
-      { "day": "Thursday", "open": "07:00", "close": "12:00" }
+      {
+        "day": "Monday",
+        "open": "07:00",
+        "close": "12:00"
+      },
+      {
+        "day": "Thursday",
+        "open": "07:00",
+        "close": "12:00"
+      }
     ],
-    "produceIds": ["p3", "p5", "p9"],
-    "image": "",
-    "thumbnail": "",
-    "tags": ["dairy", "fruit", "mandi"]
+    "produceIds": [
+      "p3",
+      "p5",
+      "p9"
+    ],
+    "image": "/assets/images/markets/north-nazimabad-mandi.webp",
+    "thumbnail": "/assets/images/markets/north-nazimabad-mandi.webp",
+    "tags": [
+      "dairy",
+      "fruit",
+      "mandi"
+    ],
+    "bestTime": "7:00 AM – 9:30 AM (Wholesale fresh crate arrivals)",
+    "vendorCount": 50,
+    "features": [
+      "Farm-Direct Mandi",
+      "Bulk Crate Pricing",
+      "Sindh & Punjab Produce",
+      "Direct Grower Stalls"
+    ],
+    "weatherHint": "Early morning sunshine, 25°C"
   }
 ]
