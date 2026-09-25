@@ -8,11 +8,3 @@ export function formatTime12h(time24) {
     ? `${hour12}:00 ${period}`
     : `${hour12}:${String(minute).padStart(2, "0")} ${period}`;
 }
-
-export function slugify(text) {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
-}

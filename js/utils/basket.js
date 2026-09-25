@@ -28,10 +28,6 @@ export function getBasketCount() {
   return readStorage().reduce((sum, item) => sum + (item.quantity || 1), 0);
 }
 
-export function isInBasket(produceId) {
-  return readStorage().some((item) => item.id === produceId);
-}
-
 export function addToBasket(produceItem, quantity = 1) {
   const items = readStorage();
   const existing = items.find((item) => item.id === produceItem.id);
