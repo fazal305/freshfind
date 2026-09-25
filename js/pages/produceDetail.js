@@ -104,10 +104,16 @@ export async function renderProduceDetail({ produceSlug }) {
 
       <div class="row g-4 mb-4">
         <div class="col-lg-5">
-          <div class="produce-detail__hero position-relative rounded-4 overflow-hidden shadow-sm bg-light" style="max-height: 380px;">
+          <div class="produce-detail__hero position-relative rounded-4 overflow-hidden shadow-sm bg-light skeleton-block" style="max-height: 380px;">
             <picture>
               <source srcset="${imageWebp}" type="image/webp" />
-              <img src="${imageJpg}" alt="${item.name}" class="w-100 h-100" style="object-fit: cover; max-height: 380px;" />
+              <img
+                src="${imageJpg}"
+                alt="${item.name}"
+                class="produce-detail__hero-img w-100 h-100"
+                style="max-height: 380px;"
+                onload="this.classList.add('is-loaded'); this.closest('.produce-detail__hero').classList.remove('skeleton-block');"
+              />
             </picture>
             <button 
               type="button" 

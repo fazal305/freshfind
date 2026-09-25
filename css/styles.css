@@ -286,20 +286,26 @@ a {
 }
 
 .market-card__img,
-.produce-card__img {
+.produce-card__img,
+.market-detail__hero-img,
+.produce-detail__hero-img {
   object-fit: cover;
   opacity: 0;
   transition: opacity var(--duration-base) var(--ease-standard);
 }
 
 .market-card__img.is-loaded,
-.produce-card__img.is-loaded {
+.produce-card__img.is-loaded,
+.market-detail__hero-img.is-loaded,
+.produce-detail__hero-img.is-loaded {
   opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .market-card__img,
-  .produce-card__img {
+  .produce-card__img,
+  .market-detail__hero-img,
+  .produce-detail__hero-img {
     transition: none;
   }
 }
@@ -457,9 +463,15 @@ a {
 }
 
 .market-detail__hero {
-  height: 200px;
+  height: clamp(220px, 32vw, 360px);
   border-radius: var(--radius-lg);
   overflow: hidden;
+}
+
+.market-detail__hero-img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .market-detail__hero svg {

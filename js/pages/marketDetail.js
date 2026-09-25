@@ -101,10 +101,15 @@ export async function renderMarketDetail({ marketSlug }) {
     <div class="container py-4">
       ${renderBreadcrumbs([{ label: "Markets", path: "/markets" }, { label: market.name }])}
 
-      <div class="market-detail__hero position-relative mb-4 rounded-4 overflow-hidden shadow-sm">
+      <div class="market-detail__hero position-relative mb-4 rounded-4 overflow-hidden shadow-sm skeleton-block">
         <picture>
           <source srcset="${imageWebp}" type="image/webp" />
-          <img src="${imageJpg}" alt="${market.name}" class="market-detail__hero-img w-100" />
+          <img
+            src="${imageJpg}"
+            alt="${market.name}"
+            class="market-detail__hero-img"
+            onload="this.classList.add('is-loaded'); this.closest('.market-detail__hero').classList.remove('skeleton-block');"
+          />
         </picture>
         <div class="market-detail__hero-overlay position-absolute bottom-0 start-0 end-0 p-3 p-md-4 text-white">
           <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
