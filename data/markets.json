@@ -3,7 +3,7 @@
     "id": "m1",
     "slug": "clifton-kisan-bazaar",
     "name": "Clifton Kisan Bazaar",
-    "description": "A seaside market known for desi tamatar, gulab and genda phool, and fresh tandoori roti from local bakers.",
+    "description": "A seaside market known for desi tamatar, genda phool garlands, and fresh garlic naan from local bakers.",
     "address": "Block 5, Clifton, near Do Darya",
     "area": "Clifton",
     "coordinates": {
@@ -88,7 +88,7 @@
     "id": "m3",
     "slug": "saddar-evening-bazaar",
     "name": "Saddar Evening Bazaar",
-    "description": "An after-work bazaar with prepared foods, dhania and pudina, and seasonal vegetables from nearby growers.",
+    "description": "An after-work bazaar with prepared foods, fresh-ground desi spices, and seasonal vegetables from nearby growers.",
     "address": "Zaibunnisa Street, Saddar",
     "area": "Saddar",
     "coordinates": {
@@ -115,14 +115,14 @@
     "image": "/assets/images/markets/saddar-evening-bazaar.webp",
     "thumbnail": "/assets/images/markets/saddar-evening-bazaar.webp",
     "tags": [
-      "herbs",
+      "spices",
       "prepared-food"
     ],
     "bestTime": "5:00 PM – 7:30 PM (Fresh twilight harvest & warm street buzz)",
     "vendorCount": 42,
     "features": [
       "Twilight Bazaar",
-      "Fresh Herb Stalls",
+      "Fresh Spice Stalls",
       "Clay Oven Roti",
       "Historic Architecture"
     ],

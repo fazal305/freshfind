@@ -33,9 +33,9 @@
   {
     "id": "p2",
     "slug": "gulab-genda-phool",
-    "name": "Gulab & Genda Phool",
+    "name": "Genda Phool (Marigold)",
     "category": "specialty",
-    "description": "Rose and marigold garlands and loose flowers, sourced from local flower growers for home and event use.",
+    "description": "Marigold garlands and loose flowers, sourced from local flower growers for home, festival, and event use.",
     "typicalSeason": "Year-round",
     "availableMonths": [
       1,
@@ -55,15 +55,15 @@
     "marketIds": [
       "m1"
     ],
-    "storageTip": "Keep stems trimmed in cold water with a drop of rosewater; mist lightly with water to preserve scent.",
+    "storageTip": "Keep stems trimmed in cold water in a cool spot; mist lightly to keep petals from wilting.",
     "culinaryUses": [
-      "Rose water extraction",
-      "Gulkand confection",
-      "Event decor",
-      "Pooja garlands"
+      "Pooja garlands",
+      "Event and doorway decor",
+      "Festival toran",
+      "Natural dye extraction"
     ],
-    "nutritionalHighlight": "Aromatherapeutic natural floral oils",
-    "approxPrice": "Rs. 250 / garland",
+    "nutritionalHighlight": "Aromatic natural floral oils",
+    "approxPrice": "Rs. 180 / garland",
     "unit": "garland"
   },
   {
@@ -135,9 +135,9 @@
   {
     "id": "p5",
     "slug": "doodh-dahi-makhan",
-    "name": "Doodh, Dahi & Makhan",
+    "name": "Desi Dahi (Fresh Yogurt)",
     "category": "dairy",
-    "description": "Fresh milk, dahi (yogurt), and desi makhan (white butter) from a single regional dairy farm.",
+    "description": "Thick, fresh dahi (yogurt) set daily in clay matkas from a single regional dairy farm.",
     "typicalSeason": "Year-round",
     "availableMonths": [
       1,
@@ -158,23 +158,23 @@
       "m2",
       "m5"
     ],
-    "storageTip": "Keep clay matka dahi in the coldest part of the fridge; wrap white butter in wax paper.",
+    "storageTip": "Keep the clay matka dahi in the coldest part of the fridge, covered, to slow further fermentation.",
     "culinaryUses": [
       "Morning sweet/salty lassi",
       "Raita",
-      "Makhan with hot paratha",
-      "Desi ghee making"
+      "Dahi bhalla",
+      "Cooling summer drinks"
     ],
-    "nutritionalHighlight": "Probiotics, high calcium, and healthy fats",
+    "nutritionalHighlight": "Probiotics, high calcium, and gut-friendly cultures",
     "approxPrice": "Rs. 320 / kg",
     "unit": "kg"
   },
   {
     "id": "p6",
     "slug": "tandoori-roti-naan",
-    "name": "Tandoori Roti & Naan",
+    "name": "Garlic Naan",
     "category": "baked-goods",
-    "description": "Fresh tandoori roti and naan baked in a clay tandoor the morning of market day.",
+    "description": "Fresh garlic naan, brushed with herbs and butter, baked in a clay tandoor the morning of market day.",
     "typicalSeason": "Year-round",
     "availableMonths": [
       1,
@@ -209,32 +209,38 @@
   {
     "id": "p7",
     "slug": "dhania-pudina",
-    "name": "Dhania & Pudina",
-    "category": "herbs",
-    "description": "Fresh coriander and mint, bunched and cut to order for chutneys and garnish.",
-    "typicalSeason": "Winter through Spring",
+    "name": "Sabut Masale (Whole & Ground Spices)",
+    "category": "spices",
+    "description": "Whole coriander seed, black peppercorns, turmeric, and red chili powder, ground fresh to order at the stall.",
+    "typicalSeason": "Year-round",
     "availableMonths": [
-      11,
-      12,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
     ],
     "image": "/assets/images/produce/dhania-pudina.webp",
     "marketIds": [
       "m3"
     ],
-    "storageTip": "Trim stem ends, place upright in a jar with an inch of water, and loosely drape a bag over the top in the fridge.",
+    "storageTip": "Store in an airtight jar away from direct sunlight to preserve color and aroma.",
     "culinaryUses": [
-      "Green hari chutney",
-      "Biryani garnishing",
-      "Pudina raita",
-      "Refreshing cooler drink"
+      "Base masala for daal and curries",
+      "Biryani masala",
+      "Marinades and tandoori rubs",
+      "Tea (chai) spice blends"
     ],
-    "nutritionalHighlight": "Rich in Vitamin A, Iron, and digestive menthol",
-    "approxPrice": "Rs. 40 / bunch",
-    "unit": "bunch"
+    "nutritionalHighlight": "Rich in antioxidants and digestive compounds from whole spices",
+    "approxPrice": "Rs. 150 / 100g pack",
+    "unit": "pack"
   },
   {
     "id": "p8",
