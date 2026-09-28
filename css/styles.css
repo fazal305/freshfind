@@ -687,7 +687,9 @@ a {
 .reveal {
   opacity: 0;
   transform: translateY(16px);
-  transition: opacity 400ms var(--ease-standard), transform 400ms var(--ease-standard);
+  transition:
+    opacity 400ms var(--ease-standard),
+    transform 400ms var(--ease-standard);
 }
 
 .reveal.is-visible {
@@ -705,7 +707,12 @@ a {
 
 /* Skeleton loaders */
 .skeleton-block {
-  background: linear-gradient(90deg, var(--color-surface-muted) 25%, #e8e2d2 37%, var(--color-surface-muted) 63%);
+  background: linear-gradient(
+    90deg,
+    var(--color-surface-muted) 25%,
+    #e8e2d2 37%,
+    var(--color-surface-muted) 63%
+  );
   background-size: 400% 100%;
   animation: skeleton-shimmer 1.4s ease infinite;
 }
@@ -753,7 +760,12 @@ html {
 
 /* Drifting gradients */
 .home-hero-banner__content {
-  background: linear-gradient(135deg, rgba(22, 53, 31, 0.92) 0%, rgba(31, 74, 48, 0.78) 45%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(22, 53, 31, 0.92) 0%,
+    rgba(31, 74, 48, 0.78) 45%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
   background-size: 180% 180%;
   animation: gradient-drift 16s ease-in-out infinite;
 }
@@ -765,7 +777,8 @@ html {
 }
 
 @keyframes gradient-drift {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {

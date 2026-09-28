@@ -49,7 +49,6 @@ export async function updateBasketView() {
   const count = getBasketCount();
   const total = calculateEstimatedTotal(items);
 
-  // Update header badges (desktop + mobile)
   const badges = $("#basket-badge-count, #basket-badge-count-mobile");
   const previousCount = badges.first().text();
   badges.text(count).toggle(count > 0);
@@ -83,7 +82,6 @@ export async function updateBasketView() {
     }
   }
 
-  // Render items
   const itemsHtml = items
     .map((item) => {
       const isChecked = item.checked ? "checked" : "";
@@ -125,7 +123,6 @@ export async function updateBasketView() {
     })
     .join("");
 
-  // Find markets carrying the items
   let marketMatchesHtml = "";
   if (marketsCache.length) {
     const marketScores = marketsCache
@@ -212,7 +209,6 @@ function bindBasketEvents() {
         btn.html(originalText);
       }, 1500);
 
-      // Show toast confirmation
       showBasketToast(`Added ${itemData.name} to your eGreen Basket!`);
     });
   });

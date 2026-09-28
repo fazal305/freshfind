@@ -22,18 +22,10 @@
         "close": "14:00"
       }
     ],
-    "produceIds": [
-      "p1",
-      "p2",
-      "p6"
-    ],
+    "produceIds": ["p1", "p2", "p6"],
     "image": "/assets/images/markets/clifton-kisan-bazaar.webp",
     "thumbnail": "/assets/images/markets/clifton-kisan-bazaar.webp",
-    "tags": [
-      "organic",
-      "flowers",
-      "baked-goods"
-    ],
+    "tags": ["organic", "flowers", "baked-goods"],
     "bestTime": "7:30 AM – 10:00 AM (Freshest seafood & morning dew produce)",
     "vendorCount": 34,
     "features": [
@@ -62,18 +54,10 @@
         "close": "13:00"
       }
     ],
-    "produceIds": [
-      "p3",
-      "p4",
-      "p5"
-    ],
+    "produceIds": ["p3", "p4", "p5"],
     "image": "/assets/images/markets/gulshan-sunday-market.webp",
     "thumbnail": "/assets/images/markets/gulshan-sunday-market.webp",
-    "tags": [
-      "dairy",
-      "eggs",
-      "honey"
-    ],
+    "tags": ["dairy", "eggs", "honey"],
     "bestTime": "8:30 AM – 11:00 AM (Peak dairy & honey arrivals)",
     "vendorCount": 26,
     "features": [
@@ -107,17 +91,10 @@
         "close": "20:00"
       }
     ],
-    "produceIds": [
-      "p1",
-      "p6",
-      "p7"
-    ],
+    "produceIds": ["p1", "p6", "p7"],
     "image": "/assets/images/markets/saddar-evening-bazaar.webp",
     "thumbnail": "/assets/images/markets/saddar-evening-bazaar.webp",
-    "tags": [
-      "spices",
-      "prepared-food"
-    ],
+    "tags": ["spices", "prepared-food"],
     "bestTime": "5:00 PM – 7:30 PM (Fresh twilight harvest & warm street buzz)",
     "vendorCount": 42,
     "features": [
@@ -151,18 +128,10 @@
         "close": "15:00"
       }
     ],
-    "produceIds": [
-      "p1",
-      "p8",
-      "p9"
-    ],
+    "produceIds": ["p1", "p8", "p9"],
     "image": "/assets/images/markets/dha-organic-hub.webp",
     "thumbnail": "/assets/images/markets/dha-organic-hub.webp",
-    "tags": [
-      "organic",
-      "fruit",
-      "oils"
-    ],
+    "tags": ["organic", "fruit", "oils"],
     "bestTime": "10:00 AM – 1:00 PM (Full artisanal harvest selection)",
     "vendorCount": 22,
     "features": [
@@ -196,18 +165,10 @@
         "close": "12:00"
       }
     ],
-    "produceIds": [
-      "p3",
-      "p5",
-      "p9"
-    ],
+    "produceIds": ["p3", "p5", "p9"],
     "image": "/assets/images/markets/north-nazimabad-mandi.webp",
     "thumbnail": "/assets/images/markets/north-nazimabad-mandi.webp",
-    "tags": [
-      "dairy",
-      "fruit",
-      "mandi"
-    ],
+    "tags": ["dairy", "fruit", "mandi"],
     "bestTime": "7:00 AM – 9:30 AM (Wholesale fresh crate arrivals)",
     "vendorCount": 50,
     "features": [

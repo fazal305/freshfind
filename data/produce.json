@@ -6,19 +6,9 @@
     "category": "vegetables",
     "description": "Locally grown desi tomatoes, favored for their tartness in curries and chutneys.",
     "typicalSeason": "Winter",
-    "availableMonths": [
-      11,
-      12,
-      1,
-      2,
-      3
-    ],
+    "availableMonths": [11, 12, 1, 2, 3],
     "image": "/assets/images/produce/desi-tamatar.webp",
-    "marketIds": [
-      "m1",
-      "m3",
-      "m4"
-    ],
+    "marketIds": ["m1", "m3", "m4"],
     "storageTip": "Store at room temperature stem-side down away from direct sunlight; do not refrigerate until fully ripe.",
     "culinaryUses": [
       "Karahi gravy base",
@@ -37,24 +27,9 @@
     "category": "specialty",
     "description": "Marigold garlands and loose flowers, sourced from local flower growers for home, festival, and event use.",
     "typicalSeason": "Year-round",
-    "availableMonths": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
-    ],
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     "image": "/assets/images/produce/gulab-genda-phool.webp",
-    "marketIds": [
-      "m1"
-    ],
+    "marketIds": ["m1"],
     "storageTip": "Keep stems trimmed in cold water in a cool spot; mist lightly to keep petals from wilting.",
     "culinaryUses": [
       "Pooja garlands",
@@ -73,25 +48,9 @@
     "category": "eggs",
     "description": "Free-range desi eggs from small poultry farms within the region.",
     "typicalSeason": "Year-round",
-    "availableMonths": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
-    ],
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     "image": "/assets/images/produce/desi-anda.webp",
-    "marketIds": [
-      "m2",
-      "m5"
-    ],
+    "marketIds": ["m2", "m5"],
     "storageTip": "Keep refrigerated in their carton pointy-end down to preserve freshness for up to 3 weeks.",
     "culinaryUses": [
       "Desi breakfast fry",
@@ -110,17 +69,9 @@
     "category": "honey",
     "description": "Unfiltered honey harvested from apiaries in the northern regions of Pakistan.",
     "typicalSeason": "Spring through Summer",
-    "availableMonths": [
-      3,
-      4,
-      5,
-      6,
-      7
-    ],
+    "availableMonths": [3, 4, 5, 6, 7],
     "image": "/assets/images/produce/desi-honey.webp",
-    "marketIds": [
-      "m2"
-    ],
+    "marketIds": ["m2"],
     "storageTip": "Store in an airtight glass jar in a dry, dark cupboard. Do not refrigerate (natural crystallization is normal).",
     "culinaryUses": [
       "Morning warm water tonic",
@@ -139,25 +90,9 @@
     "category": "dairy",
     "description": "Thick, fresh dahi (yogurt) set daily in clay matkas from a single regional dairy farm.",
     "typicalSeason": "Year-round",
-    "availableMonths": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
-    ],
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     "image": "/assets/images/produce/doodh-dahi-makhan.webp",
-    "marketIds": [
-      "m2",
-      "m5"
-    ],
+    "marketIds": ["m2", "m5"],
     "storageTip": "Keep the clay matka dahi in the coldest part of the fridge, covered, to slow further fermentation.",
     "culinaryUses": [
       "Morning sweet/salty lassi",
@@ -176,25 +111,9 @@
     "category": "baked-goods",
     "description": "Fresh garlic naan, brushed with herbs and butter, baked in a clay tandoor the morning of market day.",
     "typicalSeason": "Year-round",
-    "availableMonths": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
-    ],
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     "image": "/assets/images/produce/tandoori-roti-naan.webp",
-    "marketIds": [
-      "m1",
-      "m3"
-    ],
+    "marketIds": ["m1", "m3"],
     "storageTip": "Wrap tightly in a clean cotton kitchen cloth immediately after baking to keep soft and warm.",
     "culinaryUses": [
       "Accompaniment for daal and curries",
@@ -213,24 +132,9 @@
     "category": "spices",
     "description": "Whole coriander seed, black peppercorns, turmeric, and red chili powder, ground fresh to order at the stall.",
     "typicalSeason": "Year-round",
-    "availableMonths": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
-    ],
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     "image": "/assets/images/produce/dhania-pudina.webp",
-    "marketIds": [
-      "m3"
-    ],
+    "marketIds": ["m3"],
     "storageTip": "Store in an airtight jar away from direct sunlight to preserve color and aroma.",
     "culinaryUses": [
       "Base masala for daal and curries",
@@ -249,16 +153,9 @@
     "category": "fruits",
     "description": "Chaunsa and Sindhri mangoes sourced directly from Multan and Sindh orchards.",
     "typicalSeason": "Summer",
-    "availableMonths": [
-      5,
-      6,
-      7,
-      8
-    ],
+    "availableMonths": [5, 6, 7, 8],
     "image": "/assets/images/produce/chaunsa-sindhri-mangoes.webp",
-    "marketIds": [
-      "m4"
-    ],
+    "marketIds": ["m4"],
     "storageTip": "Keep at room temperature until fragrant and slightly soft to the touch, then chill 1 hour before serving.",
     "culinaryUses": [
       "Chilled slices",
@@ -277,25 +174,9 @@
     "category": "specialty",
     "description": "Cold-pressed mustard (sarson) and sesame (til) oil, pressed in small batches with no additives.",
     "typicalSeason": "Year-round",
-    "availableMonths": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12
-    ],
+    "availableMonths": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     "image": "/assets/images/produce/sarson-til-ka-tel.webp",
-    "marketIds": [
-      "m4",
-      "m5"
-    ],
+    "marketIds": ["m4", "m5"],
     "storageTip": "Store in dark amber glass bottles away from stove heat and sunlight to prevent oxidation.",
     "culinaryUses": [
       "Sarson ka saag cooking",
